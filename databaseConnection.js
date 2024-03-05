@@ -4,18 +4,18 @@ const is_qoddi = process.env.IS_QODDI || false;
 
 const dbConfigQoddi = {
 	host: "sql.freedb.tech",
-	user: "freedb_ 2350_main",
-	password: "K?B$j2%Pc!e28bU",
-	database: "freedb_comp2350-week2-A01356564",
+	user: "freedb_2350_main..",
+	password: "svW5VCbNE?gY*q3",
+	database: "freedb_comp2350-week5-A01296033",
 	multipleStatements: false,
 	namedPlaceholders: true
 };
 
 const dbConfigLocal = {
-	host: "sql.freedb.tech",
-	user: "freedb_ 2350_main",
-	password: "K?B$j2%Pc!e28bU",
-	database: "freedb_comp2350-week2-A01356564",
+	host: "localhost",
+	user: "root",
+	password: "kevin02gusgh02",
+	database: "restaurant_review",
 	multipleStatements: false,
 	namedPlaceholders: true
 };
