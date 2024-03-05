@@ -1,6 +1,6 @@
 const mysql = require('mysql2/promise');
 
-const is_qoddi = process.env.IS_QODDI || false;
+const is_render = process.env.IS_RENDER || false;
 
 const dbConfigQoddi = {
 	host: "sql.freedb.tech",
@@ -20,7 +20,7 @@ const dbConfigLocal = {
 	namedPlaceholders: true
 };
 
-if (is_qoddi) {
+if (is_render) {
 	var database = mysql.createPool(dbConfigQoddi);
 }
 else {
