@@ -1,3 +1,5 @@
+const { error } = require("console");
+
 const router = require("express").Router();
 const database = include("databaseConnection");
 const dbModel = include("databaseAccessLayer");
@@ -47,7 +49,7 @@ router.get("/deleteRestaurant", async (req, res) => {
     } else {
       res.render("error", { message: "Error writing to MySQL" });
       console.log("Error writing to mysql");
-      console.log(err);
+      console.log(error);
     }
   }
 });
